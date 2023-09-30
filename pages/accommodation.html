@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  Global style -->
+    <link rel="stylesheet" href="../css/global/normalize.css" />
+    <link rel="stylesheet" href="../css/global/style.css" />
+    <!--  Custom style -->
+    <link rel="stylesheet" href="../css/pages/accommodation.css" />
+    <!-- Icons => Font Awesomme -->
+    <script
+      src="https://kit.fontawesome.com/767e3e07a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Accommodation - Lol Hotel</title>
+  </head>
+  <body class="accommodation-page">
+    <header>
+      <!-- Start => Top header -->
+      <div class="container top-header">
+        <div class="top-header-left">
+          <p><i class="fa-solid fa-phone"></i>1111-2222-3333</p>
+          <p><i class="fa-solid fa-location-dot"></i>Cairo, CR</p>
+        </div>
+        <div class="top-header-right">
+          <ul>
+            <a href="./login.html">
+              <i class="fa-regular fa-user"></i>My Account</a
+            >
+            <a class="book-btn" href="./booking/step1.html"
+              ><i class="fas fa-concierge-bell"></i>Book Now</a
+            >
+          </ul>
+        </div>
+      </div>
+      <!-- End => Top header -->
+      <!-- Start => Bottom header -->
+      <div class="container bottom-header">
+        <h2>
+          <a class="logo" href="../index.html">Lol Hotel</a
+          ><i class="nav-menu fa-solid fa-bars"></i>
+        </h2>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="./accommodation.html" class="active">Accommodation</a>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End => Bottom header -->
+    </header>
+    <main>
+      <section class="landing-sect">
+        <div class="landing">
+          <h1>Accommodation</h1>
+        </div>
+        <div class="book-date">
+          <form action="" class="book-form">
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Arrival date"
+            />
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Departure date"
+            />
+            <input type="number" name="" id="" placeholder="Adults" />
+            <input type="number" name="" id="" placeholder="Children" />
+            <a href="./booking/step1.html" class="btn">Book Now</a>
+          </form>
+        </div>
+      </section>
+      <!-- Start => Our Rooms -->
+      <section class="rooms-sect container">
+        <div class="rooms-header">
+          <p>
+            Filter by:
+            <input type="button" value="All" id="filter-All" class="active" /> |
+            <input type="button" value="Rooms" id="filter-rooms" /> |
+            <input type="button" value="Suites" id="filter-suites" />
+          </p>
+          <select name="" id="">
+            <option value="default">Default</option>
+            <option value="lowPrice">Low Price</option>
+            <option value="highPrice">High Price</option>
+          </select>
+        </div>
+        <div class="rooms-container">
+          <!-- room  -->
+          <div class="room-info" data-place="room" data-price="350">
+            <img
+              src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/38-6-1470x920.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Deluxe Queen Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $350 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="suite" data-price="450">
+            <img
+              src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/37-6.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>King Ensuite Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $450 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="room" data-price="400">
+            <img
+              src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/17-6-1470x920.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Queen Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $400 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="room" data-price="200">
+            <img
+              src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/34-6.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Queen Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $200 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="suite" data-price="180">
+            <img
+              src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/04-4.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Ensuite Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $180 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="suite" data-price="400">
+            <img
+              src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/35-6.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Ensuite Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $400 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- room  -->
+          <div class="room-info" data-place="room" data-price="250">
+            <img
+              src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/04-4.jpg"
+              alt=""
+            />
+            <div class="room-text">
+              <h3>Standard Room</h3>
+              <p>
+                <i class="fa-solid fa-user"></i>Capacity:
+                <span>2 Adults</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-ruler-combined"></i> Size:
+                <span>35sqm</span>
+              </p>
+              <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+            </div>
+            <div class="room-link">
+              <button class="btn">From $250 / Night</button>
+              <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- end last room  -->
+        </div>
+        <div class="pagination"></div>
+      </section>
+      <!-- End => Our Rooms -->
+      <!-- Start => Footer -->
+      <footer class="footer">
+        <div class="top-footer container">
+          <div class="social">
+            <h3>Follow Us</h3>
+            <p>And keep up to date with Soho Hotel</p>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>
+              <i class="fa-solid fa-phone"></i>55 Columbus Circle, Cairo, CR
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>1111-2222-3333</p>
+            <p><i class="fa-solid fa-envelope"></i>booking@example.com</p>
+          </div>
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to our newsletter for exclusive offers.</p>
+            <div class="newsletter-input">
+              <input type="text" name="" id="" />
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer container">
+          © 2023 Lol Hotel. All Rights Reserved
+        </div>
+      </footer>
+      <!-- End => Footer -->
+    </main>
+    <!-- global js  -->
+    <script src="../js/global/main.js"></script>
+    <!-- custom js  -->
+    <script src="../js/pages/accommodation.js"></script>
+  </body>
+</html>

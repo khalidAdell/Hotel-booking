@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper => Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="./assets/packages/swiperJs/swiper-bundle.min.css"
+    />
+    <!--  Global style -->
+    <link rel="stylesheet" href="./css/global/normalize.css" />
+    <link rel="stylesheet" href="./css/global/style.css" />
+    <!--  Custom style -->
+    <link rel="stylesheet" href="./css/pages/home.css" />
+    <!-- Icons => Font Awesomme -->
+    <script
+      src="https://kit.fontawesome.com/767e3e07a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Lol Hotel</title>
+  </head>
+  <body>
+    <header>
+      <!-- Start => Top header -->
+      <div class="container top-header">
+        <div class="top-header-left">
+          <p><i class="fa-solid fa-phone"></i>1111-2222-3333</p>
+          <p><i class="fa-solid fa-location-dot"></i>Cairo, CR</p>
+        </div>
+        <div class="top-header-right">
+          <ul>
+            <a href="./pages/login.html">
+              <i class="fa-regular fa-user"></i>My Account</a
+            >
+            <a class="book-btn" href="./pages/booking/step1.html"
+              ><i class="fas fa-concierge-bell"></i>Book Now</a
+            >
+          </ul>
+        </div>
+      </div>
+      <!-- End => Top header -->
+      <!-- Start => Bottom header -->
+      <div class="container bottom-header">
+        <h2>
+          <a class="logo" href="./index.html">Lol Hotel</a
+          ><i class="nav-menu fa-solid fa-bars"></i>
+        </h2>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./pages/accommodation.html">Accommodation</a></li>
+          <li><a href="./pages/blog.html">Blog</a></li>
+          <li><a href="./pages/about.html">About Us</a></li>
+          <li><a href="./pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End => Bottom header -->
+    </header>
+    <main>
+      <section class="landing-sect">
+        <div class="landing">
+          <h1>
+            Luxurious Hotel<br />
+            Experience
+          </h1>
+          <a href="./pages/accommodation.html">
+            <button class="btn">View Rooms</button>
+          </a>
+        </div>
+        <div class="book-date">
+          <form action="" class="book-form">
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Arrival date"
+            />
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Departure date"
+            />
+            <input type="number" name="" id="" placeholder="Adults" />
+            <input type="number" name="" id="" placeholder="Children" />
+            <a href="./pages/booking/step1.html" class="btn">Book Now</a>
+          </form>
+        </div>
+      </section>
+      <!-- Start => welcome section -->
+      <section class="welcome-sect container">
+        <h1 class="sub-title">Welcome To Soho Hotel</h1>
+        <p class="gray-text">
+          Nullam et aliquam leo. Pellentesque eget sapien massa. Cras ac est
+          faucibus, auctor urna sed, mollis magna. Vestibulum a ante porttitor,
+          tincidunt neque in, semper ipsum. Morbi hendrerit sed risus in
+          venenatis.
+        </p>
+        <button class="btn">Learn More</button>
+      </section>
+      <!-- End => welcome section -->
+      <!-- Start => About Us section -->
+      <section class="about-us-sect container">
+        <img
+          src="http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/01-3.jpg"
+          class="about-us-img"
+        />
+        <div class="about-us-text">
+          <h2 class="sub-title">About Us</h2>
+          <p class="gray-text">
+            Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit
+            amet. Nulla mattis, urna et posuere ornare, neque leo dapibus ante,
+            nec dignissim massa felis ad nulla donec porttitor nulla et
+            tristique dignissim.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+      </section>
+      <!-- End => About Us section -->
+      <!-- Start => Our Rooms -->
+      <section class="rooms-sect container">
+        <h2 class="sub-title">Our Rooms</h2>
+        <p class="gray-text">
+          Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit amet.
+          Nulla mattis, urna et posuere ornare, neque leo dapibus ante, nec
+          dignissim.
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper swiper-rooms">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- room  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/38-6-1470x920.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Deluxe Queen Room</h3>
+                <p>
+                  <i class="fa-solid fa-user"></i>Capacity:
+                  <span>2 Adults</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-ruler-combined"></i> Size:
+                  <span>35sqm</span>
+                </p>
+                <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+              </div>
+              <div class="room-link">
+                <button class="btn">From $200 / Night</button>
+                <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- room  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/37-6.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>King Ensuite Room</h3>
+                <p>
+                  <i class="fa-solid fa-user"></i>Capacity:
+                  <span>2 Adults</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-ruler-combined"></i> Size:
+                  <span>35sqm</span>
+                </p>
+                <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+              </div>
+              <div class="room-link">
+                <button class="btn">From $200 / Night</button>
+                <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- room  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/17-6-1470x920.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Queen Room</h3>
+                <p>
+                  <i class="fa-solid fa-user"></i>Capacity:
+                  <span>2 Adults</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-ruler-combined"></i> Size:
+                  <span>35sqm</span>
+                </p>
+                <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+              </div>
+              <div class="room-link">
+                <button class="btn">From $200 / Night</button>
+                <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- room  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="	http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/37-6.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Ensuite Room</h3>
+                <p>
+                  <i class="fa-solid fa-user"></i>Capacity:
+                  <span>2 Adults</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-ruler-combined"></i> Size:
+                  <span>35sqm</span>
+                </p>
+                <p><i class="fa-solid fa-eye"></i>View: <span>City</span></p>
+              </div>
+              <div class="room-link">
+                <button class="btn">From $200 / Night</button>
+                <a href="">View Room <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- End => Our Rooms -->
+      <!-- Start => Comment section -->
+      <section class="about-us-sect comment-sect container">
+        <div class="about-us-text">
+          <span>“</span>
+          <div>
+            <h2>
+              We enjoyed our stay at soho hotel greatly, the staff were friendly
+              and attentive to every one of our needs
+            </h2>
+            <p class="gray-text">— Olivia Simons</p>
+          </div>
+        </div>
+        <img
+          src="http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/03-4.jpg"
+          class="about-us-img"
+        />
+      </section>
+      <!-- End => Comment section -->
+      <!-- Start => Offers -->
+      <section class="Offers-sect container">
+        <h2 class="sub-title">Special Offers</h2>
+        <!-- Slider main container -->
+        <div class="swiper swiper-offers">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- offer  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/17-6-1470x920.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Deluxe Queen Room</h3>
+                <p>
+                  <i class="fa-solid fa-tag"></i> 10% off for families in March
+                </p>
+              </div>
+            </div>
+            <!-- offer  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/38-6-1470x920.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>King Ensuite Room</h3>
+                <p>
+                  <i class="fa-solid fa-tag"></i> 10% off for families in March
+                </p>
+              </div>
+            </div>
+            <!-- offer  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/37-6.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Queen Room</h3>
+                <p>
+                  <i class="fa-solid fa-tag"></i> 10% off for families in March
+                </p>
+              </div>
+            </div>
+            <!-- offer  -->
+            <div class="room-info swiper-slide">
+              <img
+                src="		http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/18-6-1470x920.jpg"
+                alt=""
+              />
+              <div class="room-text">
+                <h3>Ensuite Room</h3>
+                <p>
+                  <i class="fa-solid fa-tag"></i> 10% off for families in March
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- End => Offers -->
+      <!-- Start => video tour -->
+      <section class="video-sect container">
+        <h2 class="sub-title">
+          Book online today and look forward to a relaxing stay with us
+        </h2>
+        <p class="gray-text">
+          Watch our video tour now and imagine yourself here
+        </p>
+        <i class="fa-regular fa-circle-play play-video"></i>
+        <div class="video-container video-hide">
+          <div class="overlay"></div>
+          <iframe
+            src="https://www.youtube.com/embed/watch?v=vkc99WHcDTk&ab_channel=ElzeroWebSchool"
+            allow="acceleremoter; autoplay; clipboard-write; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- End => video tour -->
+      <!-- Start => Facilities -->
+      <section class="facilities-sect container">
+        <h2 class="sub-title">Hotel Facilities</h2>
+        <!-- facility -->
+        <div class="facilities">
+          <div class="facility">
+            <i class="fa-solid fa-city"></i>
+            <div>
+              <h3>City Views</h3>
+              <p>
+                Proin felis mauris, fermentum non condimentum id, porttitor in
+                nisl curabitur euismod convallis.
+              </p>
+            </div>
+          </div>
+          <!-- facility -->
+          <div class="facility">
+            <i class="fa-solid fa-water-ladder"></i>
+            <div>
+              <h3>Swimming Pool</h3>
+              <p>
+                Proin felis mauris, fermentum non condimentum id, porttitor in
+                nisl curabitur euismod convallis.
+              </p>
+            </div>
+          </div>
+          <!-- facility -->
+          <div class="facility">
+            <i class="fa-solid fa-compass"></i>
+            <div>
+              <h3>South Facing</h3>
+              <p>
+                Proin felis mauris, fermentum non condimentum id, porttitor in
+                nisl curabitur euismod convallis.
+              </p>
+            </div>
+          </div>
+          <!-- facility -->
+          <div class="facility">
+            <i class="fa-solid fa-train-subway"></i>
+            <div>
+              <h3>Subway Nearby</h3>
+              <p>
+                Proin felis mauris, fermentum non condimentum id, porttitor in
+                nisl curabitur euismod convallis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End => Facilities -->
+      <!-- Start => Footer -->
+      <footer class="footer">
+        <div class="top-footer container">
+          <div class="social">
+            <h3>Follow Us</h3>
+            <p>And keep up to date with Soho Hotel</p>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>
+              <i class="fa-solid fa-phone"></i>55 Columbus Circle, Cairo, CR
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>1111-2222-3333</p>
+            <p><i class="fa-solid fa-envelope"></i>booking@example.com</p>
+          </div>
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to our newsletter for exclusive offers.</p>
+            <div class="newsletter-input">
+              <input type="text" name="" id="" />
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer container">
+          © 2023 Lol Hotel. All Rights Reserved
+        </div>
+      </footer>
+      <!-- End => Footer -->
+    </main>
+    <!-- swiper js  -->
+    <script src="./assets/packages/swiperJs/swiper-bundle.min.js"></script>
+    <!-- global js  -->
+    <script src="./js/global/main.js"></script>
+    <!-- custom js  -->
+    <script src="./js/pages/home.js"></script>
+  </body>
+</html>

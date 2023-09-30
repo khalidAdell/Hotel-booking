@@ -1,0 +1,311 @@
+/* Start => Welcome sect  */
+.welcome-sect {
+  text-align: center;
+  padding: 4rem 0;
+}
+.welcome-sect > h1 {
+  font-size: 2.2rem;
+}
+.welcome-sect > h1::after {
+  margin: 0 auto;
+}
+.welcome-sect > p {
+  max-width: 45rem;
+}
+/* End => Welcome sect  */
+/* Start => About sect  */
+.about-us-sect {
+  padding: 0;
+  position: relative;
+  min-height: 550px;
+}
+.about-us-sect > img,
+.about-us-sect > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+.about-us-sect .about-us-text {
+  box-sizing: border-box;
+  left: 0;
+  padding: 3rem;
+  background-color: #fff;
+}
+.about-us-sect .about-us-text p {
+  margin: 3rem 0;
+}
+.about-us-sect .about-us-img {
+  right: 0;
+  height: 100%;
+  /* background-image: url("http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/01-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; */
+}
+/* responsive */
+@media (max-width: 991px) {
+  .about-us-sect > img,
+  .about-us-sect > div {
+    position: relative;
+    width: 100%;
+  }
+}
+/* End => About sect  */
+/* Start => Our Rooms sect  */
+.rooms-sect {
+  text-align: center;
+}
+.swiper {
+  padding-bottom: 3rem;
+  width: 100%;
+}
+.rooms-sect > h2::after {
+  margin: 0 auto;
+}
+.room-info {
+  background-color: #fff;
+}
+.room-info img {
+  width: 100%;
+  object-fit: cover;
+}
+.room-info .room-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.room-info .room-text h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 20px 2rem;
+  margin: 0;
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+  box-sizing: border-box;
+}
+.room-info .room-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.room-info .room-text p {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-gray-color);
+}
+.room-info .room-text p i {
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+.room-info .room-text p span {
+  color: var(--text-color);
+}
+.room-info .room-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+/* responsive */
+@media (max-width: 768px) {
+  .rooms-sect {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .room-info .room-link .btn {
+    width: 8rem;
+    font-size: 12px;
+  }
+  .room-info .room-link a {
+    font-size: 14px;
+  }
+}
+/* End => Our Rooms sect  */
+/* Start => Comment sect  */
+.comment-sect {
+  min-height: 450px;
+  margin: 5rem 0;
+}
+.comment-sect .about-us-text {
+  right: 0;
+  left: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.comment-sect .about-us-text span {
+  color: var(--main-color);
+  font-size: 5rem;
+}
+.comment-sect .about-us-text h2 {
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.6rem;
+}
+.comment-sect .about-us-img {
+  left: 0;
+}
+/* End => Comment sect  */
+/* Start => Offers sect  */
+.Offers-sect {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.Offers-sect .sub-title::after {
+  margin: 0 auto;
+}
+.Offers-sect .swiper-offers {
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .Offers-sect {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+/* End => Offers sect  */
+/* Start => Video sect  */
+.video-sect {
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  min-height: 85vh;
+  background-image: url("http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/02-5.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.video-sect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+.video-sect h2 {
+  max-width: 70%;
+  font-size: 2.2rem;
+  z-index: 1;
+  line-height: 1.6;
+}
+.video-sect h2::after {
+  margin: 0 auto;
+}
+.video-sect p {
+  margin: 2rem auto;
+  z-index: 1;
+  color: #fff;
+}
+.video-sect i {
+  z-index: 1;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.video-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+.video-container iframe {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+  border: 4px solid var(--main-color);
+}
+.video-sect .video-hide {
+  display: none;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .video-sect h2 {
+    max-width: 90%;
+    font-size: 1.8rem;
+  }
+  .video-container iframe {
+    width: 90%;
+    height: 50%;
+  }
+}
+/* End => Video sect  */
+/* Start => Facilities sect  */
+.facilities-sect {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.facilities-sect h2::after {
+  margin: 0 auto;
+}
+.facilities-sect .facilities {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 3rem;
+}
+.facilities-sect .facility {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.facilities-sect .facility i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.facilities-sect .facility h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.facilities-sect .facility p {
+  text-align: left;
+  color: var(--text-gray-color);
+}
+/* responsive */
+@media (max-width: 768px) {
+  .facilities-sect .facilities {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+/* End => Facilities sect  */

@@ -1,0 +1,162 @@
+.about-page {
+  background-color: #fff;
+}
+.about-intro,
+.faq-sect {
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+.about-intro p {
+  margin-top: 2rem;
+  color: var(--text-gray-color);
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .about-intro,
+  .faq-sect {
+    width: 95%;
+  }
+}
+/* Start => Video sect  */
+.video-sect {
+  width: 80%;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  min-height: 85vh;
+  background-image: url("http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/02-5.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.video-sect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+.video-sect h2 {
+  max-width: 70%;
+  font-size: 2.2rem;
+  z-index: 1;
+  line-height: 1.6;
+}
+.video-sect h2::after {
+  margin: 0 auto;
+}
+.video-sect p {
+  margin: 2rem auto;
+  z-index: 1;
+  color: #fff;
+}
+.video-sect i {
+  z-index: 1;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.video-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+.video-container iframe {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+  border: 4px solid var(--main-color);
+}
+.video-sect .video-hide {
+  display: none;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .video-sect h2 {
+    max-width: 90%;
+    font-size: 1.8rem;
+  }
+  .video-container iframe {
+    width: 90%;
+    height: 50%;
+  }
+}
+/* End => Video sect  */
+/* Start => Faq  */
+.faq-sect {
+  margin-bottom: 5rem;
+}
+.faq-qustion {
+  position: relative;
+  padding-top: 7px;
+}
+.faq-qustion::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.faq-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.faq-title i {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 8px;
+}
+.faq-text {
+  transition: 0.8s;
+  color: var(--text-gray-color);
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+}
+.faq-qustion.active .faq-text {
+  max-height: 300px;
+}
+
+/* End => Faq  */
+
+.footer {
+  position: relative;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+}

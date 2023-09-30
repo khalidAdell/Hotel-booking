@@ -1,0 +1,101 @@
+.accommodation-page .landing-sect .landing {
+  background-image: url("http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/37-6.jpg");
+}
+
+/* Start => Our Rooms sect  */
+.rooms-sect {
+  margin: 2rem 0;
+}
+.rooms-sect .rooms-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.rooms-sect .rooms-header input {
+  border: none;
+  cursor: pointer;
+}
+.rooms-sect .rooms-header input.active {
+  color: var(--main-alt-color);
+}
+.rooms-sect .rooms-header select {
+  background-color: transparent;
+  border: none;
+}
+.rooms-sect .rooms-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.room-info {
+  background-color: #fff;
+}
+.room-info img {
+  width: 100%;
+  object-fit: contain;
+}
+.room-info .room-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.room-info .room-text h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 20px 2rem;
+  margin: 0;
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+  box-sizing: border-box;
+}
+.room-info .room-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.room-info .room-text p {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-gray-color);
+}
+.room-info .room-text p i {
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+.room-info .room-text p span {
+  color: var(--text-color);
+}
+.room-info .room-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  gap: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+/* responsive */
+@media (max-width: 768px) {
+  .rooms-sect .rooms-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .room-info .room-link .btn {
+    font-size: 12px;
+  }
+  .room-info .room-link a {
+    font-size: 14px;
+  }
+}
+/* End => Our Rooms sect  */

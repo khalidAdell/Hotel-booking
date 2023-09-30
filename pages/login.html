@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  Global style -->
+    <link rel="stylesheet" href="../css/global/normalize.css" />
+    <link rel="stylesheet" href="../css/global/style.css" />
+    <!--  Custom style -->
+    <link rel="stylesheet" href="../css/pages/login.css" />
+    <!-- Icons => Font Awesomme -->
+    <script
+      src="https://kit.fontawesome.com/767e3e07a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Account - Lol Hotel</title>
+  </head>
+  <body class="login-page">
+    <header>
+      <!-- Start => Top header -->
+      <div class="container top-header">
+        <div class="top-header-left">
+          <p><i class="fa-solid fa-phone"></i>1111-2222-3333</p>
+          <p><i class="fa-solid fa-location-dot"></i>Cairo, CR</p>
+        </div>
+        <div class="top-header-right">
+          <ul>
+            <a href="./login.html">
+              <i class="fa-regular fa-user"></i>My Account</a
+            >
+            <a class="book-btn" href="./booking/step1.html"
+              ><i class="fas fa-concierge-bell"></i>Book Now</a
+            >
+          </ul>
+        </div>
+      </div>
+      <!-- End => Top header -->
+      <!-- Start => Bottom header -->
+      <div class="container bottom-header">
+        <h2>
+          <a class="logo" href="../index.html">Lol Hotel</a
+          ><i class="nav-menu fa-solid fa-bars"></i>
+        </h2>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="./accommodation.html">Accommodation</a>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End => Bottom header -->
+    </header>
+    <main>
+      <section class="landing-sect">
+        <div class="landing">
+          <h1>My Account</h1>
+        </div>
+        <div class="book-date">
+          <form action="" class="book-form">
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Arrival date"
+            />
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              name=""
+              id=""
+              placeholder="Departure date"
+            />
+            <input type="number" name="" id="" placeholder="Adults" />
+            <input type="number" name="" id="" placeholder="Children" />
+            <a href="./booking/step1.html" class="btn">Book Now</a>
+          </form>
+        </div>
+      </section>
+      <!-- Start =>  -->
+      <section class="container login-sect">
+        <h2 class="sub-title">Login</h2>
+        <form class="login-form">
+          <div>
+            <label for="login-email">Email</label>
+            <input required type="email" name="login-email" id="login-email" />
+          </div>
+          <div>
+            <label for="login-password">Password</label>
+            <input
+              required
+              type="password"
+              name="login-password"
+              id="login-password"
+            />
+          </div>
+          <div class="remember-check">
+            <input type="checkbox" name="login-remember" id="login-remember" />
+            <label for="login-remember">Remember me</label>
+          </div>
+          <button class="btn" type="submit">Log in</button>
+          <a href="./resetpassword.html">Lost your password?</a>
+        </form>
+      </section>
+      <!-- End =>  -->
+      <!-- Start => Footer -->
+      <footer class="footer">
+        <div class="top-footer container">
+          <div class="social">
+            <h3>Follow Us</h3>
+            <p>And keep up to date with Soho Hotel</p>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>
+              <i class="fa-solid fa-phone"></i>55 Columbus Circle, Cairo, CR
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>1111-2222-3333</p>
+            <p><i class="fa-solid fa-envelope"></i>booking@example.com</p>
+          </div>
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to our newsletter for exclusive offers.</p>
+            <div class="newsletter-input">
+              <input type="text" name="" id="" />
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer container">
+          © 2023 Lol Hotel. All Rights Reserved
+        </div>
+      </footer>
+      <!-- End => Footer -->
+    </main>
+    <!-- global js  -->
+    <script src="../js/global/main.js"></script>
+    <!-- custom js  -->
+  </body>
+</html>

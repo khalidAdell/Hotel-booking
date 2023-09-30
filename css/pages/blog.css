@@ -1,0 +1,77 @@
+.blog-page .landing-sect .landing {
+  background-image: url("http://themes.quitenicestuff2.com/sohohotel/demo1/wp-content/uploads/2021/09/35-6.jpg");
+}
+.blog-info {
+  width: 50rem;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.blog-info img {
+  width: 100%;
+  object-fit: contain;
+}
+.blog-info .blog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 2rem;
+}
+.blog-info .blog-text h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+  box-sizing: border-box;
+}
+.blog-info .blog-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.blog-statics {
+  display: flex;
+  gap: 0 1.1rem;
+  flex-wrap: wrap;
+}
+.blog-info .blog-text p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-gray-color);
+  font-size: 15px;
+}
+.blog-info .blog-text p i {
+  color: var(--main-color);
+  font-size: 1rem;
+}
+.blog-post {
+  line-height: 1.8;
+}
+.blog-info button.btn {
+  margin: 1.5rem 2rem;
+}
+/* responsive */
+@media (max-width: 860px) {
+  .blog-info {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-info .blog-link .btn {
+    width: 8rem;
+    font-size: 12px;
+  }
+  .blog-info .blog-link a {
+    font-size: 14px;
+  }
+}
